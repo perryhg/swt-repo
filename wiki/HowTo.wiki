@@ -44,7 +44,7 @@ If in addition you want to use JFace and its Eclipse extensions (ListDialog, Lis
 <dependencies>
     <!-- Eclipse's JFace extensions -->
     <dependency>
-        <groupId>org.eclipse.swt</groupId>
+        <groupId>org.eclipse.ui</groupId>
         <artifactId>org.eclipse.ui.workbench</artifactId>
         <version>3.7.1.v20120104-1859</version>
     </dependency>
