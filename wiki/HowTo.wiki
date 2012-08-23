@@ -35,6 +35,8 @@ If you only use SWT, you have to pick up the right version, depending on your op
 </dependencies>
 }}}
 
+(You can change version to 3.8 for the latest SWT release)
+
 
 If in addition you want to use JFace and its Eclipse extensions (ListDialog, ListSelectionDialog...), add the following dependency in your POM file.
 
