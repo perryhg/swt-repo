@@ -1,0 +1,72 @@
+#summary How to use SWT and JFace with Maven?
+#labels Featured
+
+= Introduction =
+
+This project aims at providing SWT and JFace libraries (and their dependencies) as a Maven repository. This repository is helpful for people who wants to use SWT and/or JFace in non-Osgi projects.
+
+People who want to use these libraries with Maven but for Eclipse plugins or Osgi bundles will instead take a look at the Maven Tycho plugin.
+
+
+= How to? =
+
+Add this repository in your project.
+
+{{{
+<repositories>
+    <repository>
+        <id>swt-repo</id>
+        <url>https://swt-repo.googlecode.com/svn/repo/</url>
+    </repository>
+</repositories>
+}}}
+
+
+If you only use SWT, you have to pick up the right version, depending on your operating system... As an example, for Windows x64.
+
+{{{
+<dependencies>
+    <!-- SWT -->
+    <dependency>
+        <groupId>org.eclipse.swt</groupId>
+        <artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+        <version>3.7.2</version>
+    </dependency>
+</dependencies>
+}}}
+
+
+If in addition you want to use JFace and its Eclipse extensions (ListDialog, ListSelectionDialog...), add the following dependency in your POM file.
+
+{{{
+<dependencies>
+    <!-- Eclipse's JFace extensions -->
+    <dependency>
+        <groupId>org.eclipse.swt</groupId>
+        <artifactId>org.eclipse.ui.workbench</artifactId>
+        <version>3.7.1.v20120104-1859</version>
+    </dependency>
+
+    <!-- SWT -->
+    <!-- ... -->
+</dependencies>
+}}}
+
+
+If you do not need Eclipse's extensions for JFace, add instead...
+
+{{{
+<dependencies>
+    <!-- JFace dependencies -->
+    <dependency>
+    	<groupId>org.eclipse.jface</groupId>
+		<artifactId>org.eclipse.jface</artifactId>
+		<version>3.7.0.v20110928-1505</version>
+    </dependency>
+
+    <!-- SWT -->
+    <!-- ... -->
+</dependencies>
+}}}
+
+Be careful. To use JFace, both the SWT and JFace dependencies must be defined in your POM. The JFace dependency will not embed SWT libraries. Therefore, to use JFace, you have to declare two dependencies.
