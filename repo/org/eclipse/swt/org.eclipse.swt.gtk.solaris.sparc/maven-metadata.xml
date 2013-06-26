@@ -3,14 +3,15 @@
   <groupId>org.eclipse.swt</groupId>
   <artifactId>org.eclipse.swt.gtk.solaris.sparc</artifactId>
   <versioning>
-    <release>4.2.2</release>
+    <release>4.3</release>
     <versions>
       <version>3.7.2</version>
       <version>3.8</version>
       <version>4.2.1</version>
       <version>3.5.1</version>
       <version>4.2.2</version>
+      <version>4.3</version>
     </versions>
-    <lastUpdated>20130608123417</lastUpdated>
+    <lastUpdated>20130626214950</lastUpdated>
   </versioning>
 </metadata>
