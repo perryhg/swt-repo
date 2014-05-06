@@ -3,7 +3,7 @@
   <groupId>org.eclipse.swt</groupId>
   <artifactId>org.eclipse.swt.cocoa.macosx.x86_64</artifactId>
   <versioning>
-    <release>4.3</release>
+    <release>4.3.1</release>
     <versions>
       <version>3.7.2</version>
       <version>3.8</version>
@@ -11,7 +11,8 @@
       <version>3.5.1</version>
       <version>4.2.2</version>
       <version>4.3</version>
+      <version>4.3.1</version>
     </versions>
-    <lastUpdated>20130626213040</lastUpdated>
+    <lastUpdated>20140506020330</lastUpdated>
   </versioning>
 </metadata>
